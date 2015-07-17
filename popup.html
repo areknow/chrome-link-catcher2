@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        body {
+            width: 1000px;
+            background: #383838;
+            color: #ddd;
+            padding-top: 10px;
+            box-sizing: border-box;
+        }
+        a {
+            position: relative;
+            color: #1f81d4;
+            text-decoration: none;
+            font-size: 20px;
+            transition: all .1s ease;
+            z-index: 1;
+            padding: 10px;
+            margin-left: 10px;
+        }
+        a:hover {
+            color: #1c3953;
+            font-size: 21px;
+            border: 1px solid #7493be;
+            border-radius: 5px;
+            background: #b1b1b1;
+            z-index: 2;
+            box-shadow: 0 3px 20px black;
+        }
+        a:visited {
+            color: #9b2d2d;
+        }
+        a:focus {
+            outline:0;
+        }
+        #total {
+            font-size: 28px;
+            padding-left: 10px;
+            z-index: 1;
+            margin-left: 10px;
+        }
+        #message {
+            overflow: hidden;
+        }
+        .line {
+            width: 78.5%;
+            height: 1px;
+            background: #959595;
+            margin-top: 15px;
+        }
+    </style>
+    <script src="jquery.js"></script>
+    <script src='popup.js'></script>
+    <script src='getPagesSource.js'></script>
+</head>
+<body>
+    <div id='total'>
+        <span id="stats"></span> - 
+        <span id="count"></span> links
+    </div>
+    <div class="line"></div>
+    <div id='message'>Searching for links...</div>
+</body>
+</html>
